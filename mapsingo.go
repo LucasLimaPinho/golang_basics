@@ -3,6 +3,12 @@ package main
 import "fmt"
 
 var x [5]int
+
+type Person struct{
+name string
+addr string
+phone string
+}
 func main(){
 	arr := [...]string{"a","b","c","d","e","f","g"}
 	s1 := arr[1:3]
@@ -43,6 +49,10 @@ func main(){
 	for key, val := range idMap2{
 		fmt.Println(key,val)
 	}
+	var p1 Person
+	p1.name = "joe"
+	p1.addr = "rua2"
+	p1.phone ="+55983293
 
 }
 
